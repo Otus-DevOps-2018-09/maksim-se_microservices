@@ -9,8 +9,42 @@ nginx                latest              568c4670fa80        2 months ago       
 mariadb              10.3                b468922dbbd7        2 months ago        366MB
 
 
------------------------ 
+----------------------- Описание работы
 Image - это как live-cd: система и установленные пакеты, готовые к запуску.
 Container - это запущенная с этого Image виртуальная машина. В контейнере прописываются ресурсы контейнера, сетевые настройки.
 В Image этого не прописывается.
+----------------------- Удаление контейнеров
+red02@SKRS ~/otus/maksim-se_microservices/docker-monolith (docker-1) $ docker rm $(docker ps -a -q)
+42a0b5dd0712
+421616f4dfcb
+62f3e5132e18
+Error response from daemon: You cannot remove a running container eb2ddc146462295b354f532441396472b5323385f9e641d204978275b30e279e. Stop the container before attempting removal or force remove
+Error response from daemon: You cannot remove a running container 1314ceb093b81f2b871bd85f269ccf536a821991248bb88967db57fdaaeaa8f0. Stop the container before attempting removal or force remove
+Error response from daemon: You cannot remove a running container 0e206c1186601f55f008d35d760f96095611e64ac4843cd736d0debbbc5b741f. Stop the container before attempting removal or force remove
+red02@SKRS
+----------------------- Удаление образов
+red02@SKRS ~/otus/maksim-se_microservices/docker-monolith (docker-1) $ docker images
+REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
+ubuntu               16.04               7e87e2b3bf7a        7 days ago          117MB
+hello-world          latest              fce289e99eb9        4 weeks ago         1.84kB
+xmsu_nginx           latest              7b0a0e7cc386        5 weeks ago         109MB
+ghost                2-alpine            e109ec179ed7        5 weeks ago         454MB
+ghost                latest              bf3f48f010e1        5 weeks ago         815MB
+deliverous/certbot   latest              80614cf05138        7 weeks ago         103MB
+nginx                latest              568c4670fa80        2 months ago        109MB
+mariadb              10.3                b468922dbbd7        2 months ago        366MB
+red02@SKRS ~/otus/maksim-se_microservices/docker-monolith (docker-1) $ docker rmi 7e87e2b3bf7a fce289e99eb9
+Untagged: ubuntu:16.04
+Untagged: ubuntu@sha256:e4a134999bea4abb4a27bc437e6118fdddfb172e1b9d683129b74d254af51675
+Deleted: sha256:7e87e2b3bf7a84571ecc2a8cea8a81fabb63b2dde8e7fc559bcbee28d8e9be83
+Deleted: sha256:7eb46ebc736921ffa70c8757618b02e4d0d3c4627d823a7e1b8f59bb924ecf93
+Deleted: sha256:4f9c6186221ca469b29e4b55599f2a7969b705df4ef10d1585f2e7681503eb7b
+Deleted: sha256:fc94d17b18c9a353a5b5b9500e04a4c24d8d4b2632fd549596c85e6157377fc2
+Deleted: sha256:0de2edf7bff41238438e25b6f2de055b97c7fb6fe095cd560c2095b8dd70fc99
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:2557e3c07ed1e38f26e389462d03ed943586f744621577a99efb77324b0fe535
+Deleted: sha256:fce289e99eb9bca977dae136fbe2a82b6b7d4c372474c9235adc1741675f587e
+Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
+red02@SKRS ~/otus/maksim-se_microservices/docker-monolith (docker-1) $
+
 
