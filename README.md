@@ -68,5 +68,15 @@ maksim-se microservices repository
 
 ## TODO: реализовать задание со * и **
 
+# HW-18
+## в процессе выполнено
+1. запущен Prometheus в докере
+2. создан собственный образ Prometheus с конфигурацией нашего приложения
+3. пересобрали приложения и Prometheus 
+4. подняли приложения и Prometheus, убедились что Prometheus запустился и видит сервисы
+5. подняли node-exporter для сбора статистики с хоста
+
+   Ссылка на dockerhub: https://hub.docker.com/u/maks123
+
 
 
