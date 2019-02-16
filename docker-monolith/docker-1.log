@@ -1,0 +1,16 @@
+REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+maksim/ubuntu-tmp-file   latest              1c7e5d0df785        11 seconds ago      117MB
+ubuntu                   16.04               7e87e2b3bf7a        7 days ago          117MB
+xrsu_nginx               latest              7b0a0e7cc386        5 weeks ago         109MB
+ghost                    2-alpine            e109ec179ed7        5 weeks ago         454MB
+ghost                    latest              bf3f48f010e1        5 weeks ago         815MB
+deliverous/certbot       latest              80614cf05138        7 weeks ago         103MB
+nginx                    latest              568c4670fa80        2 months ago        109MB
+mariadb                  10.3                b468922dbbd7        2 months ago        366MB
+
+----------------------- Описание работы
+Image - это как live-cd: система и установленные пакеты, готовые к запуску.
+Container - это запущенная с этого Image виртуальная машина. В контейнере прописываются ресурсы контейнера, сетевые настройки.
+В Image этого не прописывается.
+
+
