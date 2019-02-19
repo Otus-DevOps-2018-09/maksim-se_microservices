@@ -99,3 +99,21 @@ maksim-se microservices repository
 
 ## TODO: реализовать задание со * / ** / *** (конда-нибудь, судя по объёму работы ))))
 
+# HW-21
+## в процессе выполнено
+1. написаны депройменты для сервисов mongo, comment, post, ui
+2. утановили k8s по инструкции https://github.com/kelseyhightower/kubernetes-the-hard-way 
+3. созданы поды из созданных манифестов, поды поднялись.
+```
+red02@SKRS1358 ~/otus/maksim-se_microservices/kubernetes/the_hard_way (kubernetes-1) $ kubectl get pods
+NAME                                 READY   STATUS    RESTARTS   AGE
+busybox-bd8fb7cbd-pzjhr              1/1     Running   0          31m
+comment-deployment-c5fb5d4d7-887x6   1/1     Running   0          12m
+mongo-deployment-6fdb44964c-l5hcp    1/1     Running   0          13m
+nginx-dbddb74b8-d8r9z                1/1     Running   0          30m
+post-deployment-b668dc698-9l789      1/1     Running   0          12m
+ui-deployment-6bdc89d75-nmwx2        1/1     Running   0          12m
+untrusted                            1/1     Running   0          27m
+red02@SKRS1358 ~/otus/maksim-se_microservices/kubernetes/the_hard_way (kubernetes-1) $
+```
+
