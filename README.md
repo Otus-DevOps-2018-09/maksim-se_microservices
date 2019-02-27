@@ -135,3 +135,12 @@ red02@SKRS1358 ~/otus/maksim-se_microservices/kubernetes/the_hard_way (kubernete
 5. создали networkPolicy для mongo с доступом только для comment, но по файкту "факир был пьян" и оно не работало, создали правило и для post
 6. создали persistentVolume и persistentVolumeClaim для деплоймента mongo, теперь данные базы сохранаются и выделяются динамически
 
+# HW-24
+## в процессе выполнено
+1. установили helm и tiller, выдали права на под тиллера
+2. написаны шаблоны миктосервисов. поиграоись с релизами
+3. создали _helpers.tpl
+4. создали основной chart reddit с ссылками на микросервисы
+5. установили gitlab-omnibus, создали группу, проекты (ui, post, comment, reddit-deploy), загрузили соответствующие компоненты по проектам
+6. настроили gitlab-ci для reddit-deploy, создали автоматическое создание окружений для staging и proda, настроели деплой среды по-кнопкам.
+
