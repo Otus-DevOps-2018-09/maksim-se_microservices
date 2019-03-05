@@ -8,4 +8,4 @@ packer/variables.json
 jdauphant.nginx
 vault.key
 .env
-
+kubernetes/Gitlab_ci/
