@@ -144,3 +144,14 @@ red02@SKRS1358 ~/otus/maksim-se_microservices/kubernetes/the_hard_way (kubernete
 5. установили gitlab-omnibus, создали группу, проекты (ui, post, comment, reddit-deploy), загрузили соответствующие компоненты по проектам
 6. настроили gitlab-ci для reddit-deploy, создали автоматическое создание окружений для staging и proda, настроели деплой среды по-кнопкам.
 
+# HW-25
+## в процессе выполнено
+1. развернули дополнительный пул серверов
+2. установили ingress контролеры
+3. установлен Prometheus и включен сбор метрик kube-state-metrics и node-exporter
+4. установлена Grafana
+5. добавлен "Kubernetes cluster monitoring (via Prometheus)" и ранее созданные дашборды 
+6. доработаны темплейты с выбором окружения приложения
+
+TODO: запустить еластик в кластере (пок деньги не закончились на счете)))
+
